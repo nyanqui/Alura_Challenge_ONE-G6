@@ -17,7 +17,7 @@ function buttonEncriptar(){
     
     desincriptadoText.innerHTML = textoCifrado;
     document.getElementById("mensaje-inical").style.display = "none";
-    document.getElementById("mensaje-descincriptado").style.display = "block";
+    document.getElementById("mensaje-descincriptado").style.display = "flex";
 }
 
 function desencriptarTexto(){

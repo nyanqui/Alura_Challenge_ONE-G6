@@ -43,7 +43,7 @@ body{
     width: 100%;
     margin: 12px 0;
     text-align: center;
-    height: 55px;
+    padding: 16px;
     border-radius: 24px;
     border: 1px solid #0A3871;
     box-sizing: border-box;
@@ -86,11 +86,18 @@ body{
     font-weight: 400;
     text-align: center;
 }
-.box-resultado p{
+.box-resultado #desincriptadoText{
     font-size: 24px;
     font-weight: 400;
     color: #495057;
+    border: none;
+    height: 100%;
 }
+textarea:focus,
+textarea:active{
+    outline: none;
+}
+
 #btn-copiar{
     margin: 32px 0 0;
 }
@@ -133,7 +140,7 @@ body{
     }
     .col{
         max-width: 680px;
-        padding: 0 40px;
+        padding: 0 20px;
         box-sizing: content-box;
         display: flex;
         flex-direction: column;
@@ -155,8 +162,18 @@ body{
         flex-direction: column;
         justify-content: center;
     }
+    .pb-2{
+        padding-bottom: 20px;
+    }
 }
 
 #mensaje-descincriptado{
    display: none;
+}
+
+#mensaje-descincriptado{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
 }
